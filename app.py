@@ -11,5 +11,13 @@ def index():
 def about():
     return render_template('about-me.html')
 
+@app.route('/work')
+def work():
+    return render_template('work.html')
+
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
