@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 :root {
-    --blue-sapphire: #314299;
-    --purple-moon-raker: #D2C6F0;
-    --yellow-orange: #FAB338;
-    --gray-geyser : ##dfe7e6;
+    --blue-ship-cove: #c3e2e5;
+    --yellow-beeswax: #fdf1c8;
+    --rose-french-lilac: #ddc6f0;
+    --blue-minsk: #373286;
+    --yellow: #fab338;
+    --rose-tonys-pink: #e5979b;
+    --gray-light: #f1f1fa;
+    --blue-bright: #1100d9;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F2F4F6;
+    background-color: var(--gray-light);
 }
 
 .main {
@@ -18,24 +22,32 @@ body {
 
 h2 {
     font-size: 80px;
+    color: var(--blue-bright);
 }
 
 .profile-img-container {
     width: 350px;
-    height: 350px;
-
+    height: 300px;
+    margin-top: -60px;
 }
 
 #img-profile {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5)
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     font-weight: bold;
     text-shadow: 0px 6px 9px rgba(0, 0, 0, 0.5);
+}
+
+p.hero-description {
+    font-size: 20px;
+    color: var(--blue-bright);
+    font-style: italic;
+    font-weight: 500;
 }
 
 h2 span {
@@ -44,14 +56,24 @@ h2 span {
 }
 
 a.nav-link{
-    color: var(--blue-sapphire);
+    color: var(--yellow-beeswax);
     font-style: italic;
     font-weight: 500;
+    color: var(--blue-minsk);
 }
+
+a.nav-link:hover{
+    color: var(--blue-bright);
+}
+
+/* header {
+    border-bottom: 1px solid var(--rose-french-lilac);
+} */
 
 p.about-me-content {
     font-size: 35px;
     font-weight: 500;
+    color: var(--blue-minsk)
 }
 
 /* .section-style {
@@ -59,15 +81,17 @@ p.about-me-content {
 } */
 
 .section-style h5 {
-    color: var(--blue-sapphire);
+    color: var(--blue-minsk);
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 40px;
+    /* text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.5); */
 }
 
 .card {
     border: 3px solid black;
     border-radius: 16px;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 1)
 }
 
 div.card-body:first-child {
@@ -82,9 +106,15 @@ a.social > img {
 }
 
 img.skill {
-    background-color: var(--gray-geyser);
+    /* background-color: #eab19b; */
     height: 90px;
     width: 90px;
     padding: 20px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    /* border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+h6.skill-title  {
+    font-size: 13px;
+    color: var(--blue-minsk);
 }
