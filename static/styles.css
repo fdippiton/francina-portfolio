@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,400;1,500;1,700;1,800;1,900&display=swap');
 
+:root {
+    --blue-sapphire: #314299;
+    --purple-moon-raker: #D2C6F0;
+    --yellow-orange: #FAB338;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F4F6;
 }
+
+.main {
+    height: 100vh;
+} 
 
 h2 {
     font-size: 80px;
@@ -33,11 +43,39 @@ h2 span {
 }
 
 a.nav-link{
-    color: #314299;
+    color: var(--blue-sapphire);
     font-style: italic;
     font-weight: 500;
 }
 
-div.work {
-    margin-top: 50px;
+p.about-me-content {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/* .section-style {
+    height: 100vh;
+} */
+
+.section-style h5 {
+    color: var(--blue-sapphire);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 16px;
+}
+
+div.card-body:first-child {
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 3px solid black;
+}
+
+a.social > img {
+    width: 25px;
+    height: 25px;
+    margin: 20px 20px 20px 0;
 }

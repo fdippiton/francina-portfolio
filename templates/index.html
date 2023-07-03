@@ -6,38 +6,78 @@
 </head>
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">WORK</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">SKILLS</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">RESUME</a></li>
-          </ul>
-        </header>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                Main Section                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="main">
+          <!-- ------------------------------- Header -------------------------------- -->
+          {% include 'header.html' %}
+  
+          <div>
+              <!-- ----------------------------- Description ----------------------------- -->
+              <div class="row mt-5">
+                  <h2 class="mt-5">Hi!</h2> <br>
+                  <h2>I'm <span>Francina Dippitón!<span></h2> <br>
+                  <h2> A Software Developer.</h2>
+              </div>
+  
+              <!-- ----------------------------- Hero Photo ------------------------------ -->
+              <div class="row d-flex justify-content-end">
+                <div class="profile-img-container">
+                  <img class="profile-row" id="img-profile"  src="../static/francina_profile.jpg" alt="">
+                </div>
+              </div>
+          </div>
 
-        <div>
-            <div class="row mt-5">
-                <h2 class="mt-5">Hi!</h2> <br>
-                <h2>I'm <span>Francina Dippitón!<span></h2> <br>
-                <h2>Software developer.</h2>
-            </div>
+        </div>
+        
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              About Me Section                               -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- <div class="row section-style" id="about" style="height: 70vh;">
+          <h5 class="mb-5 mt-4">ABOUT ME</h5>
+          <p class="about-me-content">I'm an aspiring full-stack developer and <b style="font-style: italic;">Computer Systems Engineer</b>. I'm passionate about tech and that's why I constantly seek to gain knowledge, improve and develop my skills as  programmer. I also enjoy to be in nature and learn Norwegian.</p>
+        </div> -->
 
-            <div class="row d-flex justify-content-end">
-              <div class="profile-img-container">
-                <img class="profile-row" id="img-profile"  src="../static/francina_profile.jpg" alt="">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              Work Section                               -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="row section-style mb-5" id="work">
+          <h5 class="mb-4 mt-4">WORK</h5>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body" style="background-color: #FAB338; height: 250px;"></div>
+                <div class="card-body">
+                  <h6 class="card-title"> <b>Project name</b></h6>
+                  <p class="card-text">HTML, CSS, JavaScript, React.</p>
+                </div>
               </div>
             </div>
-
-            <div class="row work">
-              <h5>WORK</h5>
-              <p>I'm an aspiring full-stack developer and Computer Systems Engineer. I'm passionate about tech and that's why I constantly seek to gain knowledge, improve and develop my skills as  programmer. I also enjoy to be in nature and learn Norwegian.</p>
+  
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body" style="background-color: #D2C6F0; height: 250px;"></div>
+                <div class="card-body">
+                  <h6 class="card-title"><b>Project name</b></h6>
+                  <p class="card-text">HTML, CSS, JavaScript, React.</p>
+                </div>
+              </div>
             </div>
+  
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body" style="background-color: #FAB338; height: 250px;"></div>
+                <div class="card-body">
+                  <h6 class="card-title"><b>Project name</b></h6>
+                  <p class="card-text">HTML, CSS, JavaScript, React.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
-
     </div>
 </body>
 </html>

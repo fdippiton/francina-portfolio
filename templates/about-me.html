@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About me</title>
+    {% include 'bootstrap.html' %}
+</head>
+<body>
+    <div class="container">
+
+        <div class="row section-style" id="about" style="height: 100vh;">
+            <div class="row" style="height: 10%;">
+                {% include 'header.html' %}
+            </div>
+
+            <div class="row" style="height: 10%;">
+                <h5 class="mb-5 mt-4">ABOUT ME</h5>
+            </div>
+
+            <div class="row" style="height: 70%;">
+                <p class="about-me-content mt-5">I'm an aspiring full-stack developer and <b style="font-style: italic;">Computer Systems Engineer</b>. I'm passionate about tech and that's why I constantly seek to gain knowledge, improve and develop my skills as  programmer. I also enjoy to be in nature and learn Norwegian.</p>
+            </div>
+
+            <div class="d-flex align-self-center" style="height: 10%;">
+                <a class="social" href=""><img src="/static/assets/github-icon.svg" alt=""></a>
+                <a class="social" href=""><img src="/static/assets/linkedin-square-icon.svg" alt=""></a>
+                <a class="social" href=""><img src="/static/assets/black-instagram-icon.svg" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
