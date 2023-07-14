@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Francina Portfolio</title>
     {% include 'bootstrap.html' %}
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                                Main Section                             -->
-        <!-- ----------------------------------------------------------------------- -->
-        <div class="main">
-          <!-- ------------------------------- Header -------------------------------- -->
-          {% include 'header.html' %}
-  
-          <div>
-              <!-- ----------------------------- Description ----------------------------- -->
-              <div class="row mt-5">
-                  <h2 class="mt-5">Hi!</h2> <br>
-                  <h2>I'm <span>Francina Dippitón!<span></h2> <br>
-                  <h2> A Software Developer.</h2>
-                  <p class="hero-description">Computer System Engineering student.</p>
-              </div>
-  
-              <!-- ----------------------------- Hero Photo ------------------------------ -->
-              <div class="row d-flex justify-content-end">
-                <div class="profile-img-container text-center">
-                  <img class="profile-row" id="img-profile"  src="../static/francina_profile.jpg" alt="">
-                </div>
-              </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Main Section                             -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="main">
+        <!-- ------------------------------- Header -------------------------------- -->
+        {% include 'header.html' %}
+
+        <div>
+          <!-- ----------------------------- Description ----------------------------- -->
+          <div class="row mt-5">
+            <h2 class="mt-5 fade-in-top">Hi!</h2>
+            <br />
+            <h2 class="fade-in-top">
+              I'm
+              <h2>Francina Dippitón!</h2>
+            </h2>
+            <br />
+            <h2 class="fade-in-top">A Software Developer.</h2>
+            <p class="hero-description fade-in-top">
+              Computer System Engineering student.
+            </p>
           </div>
 
+          <!-- ----------------------------- Hero Photo ------------------------------ -->
+          <div class="row d-flex justify-content-end">
+            <div class="profile-img-container text-center">
+              <img
+                class="profile-row animate__animated animate__zoomIn"
+                id="img-profile"
+                src="../static/francina_profile.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <div class="col skill-container">
+      <div class="moving-skill">
+        <!-- <img src="/static/assets/html-icon.svg" alt="" class="skill" /> -->
+        <h6 class="skill-title mt-3 text-center">
+          HTML CSS Bootstrap Github Git Python JavaScript Flask MYSQL Oracle
+          SQLServer
+        </h6>
+      </div>
+    </div>
+  </body>
 </html>

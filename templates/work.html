@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Work</title>
     {% include 'bootstrap.html' %}
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        {% include 'header.html' %}
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                              Work Section                               -->
-        <!-- ----------------------------------------------------------------------- -->
-        <div class="row section-style mb-5" id="work">
-            <h5 class="mb-4 mt-4">WORK</h5>
-        
-            <div class="row row-cols-1 row-cols-md-3 g-4 ">
-                <div class="col-6">
-                <div class="card">
-                    <div class="card-body" style="background-color: #D2C6F0; height: 250px;"></div>
-                    <div class="card-body">
-                    <h6 class="card-title"> <b>Project name</b></h6>
-                    <p class="card-text">HTML, CSS, JavaScript, React.</p>
-                    </div>
-                </div>
-                </div>
-        
-                <div class="col-6">
-                <div class="card">
-                    <div class="card-body" style="background-color: #D2C6F0; height: 250px;"></div>
-                    <div class="card-body">
-                    <h6 class="card-title"><b>Project name</b></h6>
-                    <p class="card-text">HTML, CSS, JavaScript, React.</p>
-                    </div>
-                </div>
-                </div>
-        
-                <div class="col-6">
-                <div class="card">
-                    <div class="card-body" style="background-color: #D2C6F0; height: 250px;"></div>
-                    <div class="card-body">
-                    <h6 class="card-title"><b>Project name</b></h6>
-                    <p class="card-text">HTML, CSS, JavaScript, React.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</body>
-</html>
+      {% include 'header.html' %}
 
+      <!-- ---------------------------- Work Section ----------------------------- -->
+      <div class="row section-style mb-5" id="work">
+        <h5 class="mb-4 mt-4">WORK</h5>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% for project in projects %}
+
+          <!-- Cards -->
+          <div class="col-6">
+            <div class="card animate__animated animate__slideInUp">
+              <div
+                class="card-body"
+                style="background-color: #7589c0; height: 30px"
+              ></div>
+
+              <div
+                class="card-body"
+                style="background-color: #fdf1c8; height: 30px"
+              ></div>
+
+              <!-- Card Content -->
+              <div class="card-body">
+                <h6 class="card-title"><b>🧃 {{project.project_name}}</b></h6>
+                <p>{{project.project_description}}</p>
+                <p class="card-text">{{project.technologies_used}}</p>
+
+                <!-- Github Link -->
+                <a
+                  href="{{project.github_url}}"
+                  target="_blank"
+                  class="ext-link"
+                  ><img
+                    src="../static/assets/github-icon.svg"
+                    style="height: 20px; width: 20px"
+                    alt=""
+                /></a>
+
+                <!-- Site Link -->
+                <a
+                  href="{{project.project_url}}"
+                  target="_blank"
+                  class="ext-link"
+                  ><img
+                    src="../static/assets/popup-link-icon.svg"
+                    alt=""
+                    style="height: 18px; width: 18px"
+                /></a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

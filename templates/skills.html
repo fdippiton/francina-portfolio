@@ -1,62 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Skills</title>
     {% include 'bootstrap.html' %}
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        {% include 'header.html' %}
+      {% include 'header.html' %}
 
-        <div class="row section-style mb-5" id="skills">
-            <h5 class="mb-5 mt-4">SKILLS</h5>
+      <div class="row section-style mb-5" id="skills">
+        <!-- Skills Title -->
+        <h5 class="mb-5 mt-4">SKILLS</h5>
 
-            <div class="row">
-                <div class="col">
-                    <img src="/static/assets/html-icon.svg" alt="" class="skill"><h6 class="skill-title mt-3 text-center">HTML</h6>
-                </div>
-                    
-                <div class="col">
-                    <img src="/static/assets/css-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">CSS</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/bootstrap-5-logo-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Bootstrap</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/github-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Github</h6></div>
-                <div class="col">
-                    <img src="/static/assets/git-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Git</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/python-programming-language-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Python</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/javascript-programming-language-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">JavaScript</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/flask-logo-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Flask</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/mysql-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">MYSQL</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/oracle-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">Oracle</h6>
-                </div>
-                <div class="col">
-                    <img src="/static/assets/sql-server-icon.svg" alt="" class="skill">
-                    <h6 class="skill-title mt-3 text-center">SQLServer</h6>
-                </div>
-            </div>
+        <!-- ------------------------------- Skills -------------------------------- -->
+        <div class="col skill-container">
+          <div class="moving-skill">
+            <h6 class="skill-title mt-3 text-center">
+              HTML | CSS | Bootstrap | Github | Git | Python | JavaScript |
+              Flask | MYSQL | Oracle | SQLServer
+            </h6>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
