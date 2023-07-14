@@ -139,7 +139,7 @@ h6.skill-title {
   background-color: rgba(221, 198, 240, 0.5);
 }
 
-/* ------------------------------- Transitions ------------------------------ */
+/* ------------------------------- TRANSITIONS ------------------------------ */
 .moving-skill {
   white-space: nowrap;
   animation: slideIn 10s linear infinite;

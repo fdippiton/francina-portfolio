@@ -3,6 +3,7 @@ from sqlalchemy import create_engine, text
 from decouple import config
 
 
+
 # The line `engine = create_engine(config('DB_CONNECTION_STRING'))` is creating a database engine
 # using the SQLAlchemy library.
 engine = create_engine(config('DB_CONNECTION_STRING'))
